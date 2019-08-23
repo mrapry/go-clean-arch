@@ -4,7 +4,7 @@ import (
 	"errors"
 	"github.com/joho/godotenv"
 	"github.com/labstack/gommon/log"
-	"go-mysql/config/env"
+	"go-clean-arch/config/env"
 	"os"
 	"sync"
 )

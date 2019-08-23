@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/labstack/echo"
 	mid "github.com/labstack/echo/middleware"
-	"go-mysql/config/env"
-	"go-mysql/middleware"
+	"go-clean-arch/config/env"
+	"go-clean-arch/middleware"
 	"net/http"
 	"time"
 )
@@ -37,10 +37,6 @@ func (s *EchoServer) Run() {
 			Datetime: time.Now().Format(time.RFC3339),
 		})
 	})
-
-	//dilGroupV1 := e.Group("/v1/dil")
-	//dilGroupV1.Use()
-	//s.dilV1.Mount(dilGroupV1)
 
 	// set listener port
 	listenerPort := fmt.Sprintf(":%d", env.GetEnv().HTTPPort)

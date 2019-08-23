@@ -12,7 +12,7 @@ import (
 // Logger function for writing all request log into console
 func Logger(next echo.HandlerFunc) echo.HandlerFunc {
 	return func(c echo.Context) error {
-		name := "acticity-service"
+		name := "go-service"
 		l := log.StandardLogger()
 
 		start := time.Now()
