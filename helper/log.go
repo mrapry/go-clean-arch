@@ -7,7 +7,7 @@ import (
 
 const (
 	// TOPIC for setting topic of log
-	TOPIC = "dil-services-log"
+	TOPIC = "go-services-log"
 )
 
 // LogContext function for logging the context of echo
